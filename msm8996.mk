@@ -34,7 +34,7 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # HWUI overrides
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -147,10 +147,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:system/etc/calib.cfg
-
-# Doze mode
-PRODUCT_PACKAGES += \
-    XiaomiDoze
 
 # Fingerprint
 PRODUCT_PACKAGES += \
